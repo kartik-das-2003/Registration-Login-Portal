@@ -96,13 +96,3 @@
                 margin: 10px 0; 
             }
         }
-
-        @media (max-width: 480px) {
-            .box {
-                width: 90%;
-            }
-
-            h1 {
-                font-size: 1.2rem; 
-            }
-        }
