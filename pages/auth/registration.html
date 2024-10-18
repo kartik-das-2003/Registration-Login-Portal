@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../animages/user.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+</head>
+<body style="height:max-content;">
+    <div class="container">  
+        <div class="box">
+            <h2>Registration Form</h2>
+            <p>Please Fill Everything Correctly</p>
+            <br/>
+            <form method="post" action="/register">
+                <!--Name Section-->
+                <div class="input-group">
+                    <label for="fullname">User Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div>
+
+                <!--Date Of Birth Section-->
+                <div class="input-group">
+                    <label for="dob">Date Of Birth:</label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+
+                <!--Mobile Section-->
+                <div class="input-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" name="mobile" id="mobile" pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <!--Mail Section-->
+                <div class="input-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <!--Gender Section-->
+                <div class="input-group">
+                    <label for="gender">Gender:</label>
+                    <select type="gender" name="gender" id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!--Education Section-->
+                <div class="input-group">
+                <label for="education">Education:</label>
+                    <select type="education" name="education" id="education" required>
+                        <option value="secondary">Secondary</option>
+                        <option value="higher-sceondary">Higher Secondary</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="post-graduate">Post Graduate</option>
+                        <option value="doctor-of-philosophy">M. Phil</option>
+                        <option value="other">None Of Above</option>
+                    </select>
+                </div>
+
+                <!--Password Section-->
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" minlength="10" required>
+                </div>
+
+                <!--Button Section-->
+                <div class="button-group">
+                    <input type="submit" class="btn" value="SUBMIT">
+                    <input type="reset" class="btn" value="CLEAR">
+                </div>
+
+            </form>
+            <div>
+                <p>
+                    <p>Already Registered? <a href="login.html" style="text-decoration:none;">Login Now!</a></p>
+                    <a href="../homepage.html" style="text-decoration:none;">Back To Home!</a>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

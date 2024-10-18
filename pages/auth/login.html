@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../animages/login.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <div class="box">
+            <h2>Login Page</h2>
+            <p>Please Fill Everything Correctly</p>
+            <br/>
+            <form method="post" action="/logcheck">
+                <div class="input-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" placeholder="Input Your Mail Id" name="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="Input Your Password" name="password" id="password" required>
+                </div>
+                <div class="button-group">
+                    <input type="submit" class="btn" value="LOGIN">
+                    <input type="reset" class="btn" value="CLEAR">
+                </div>
+
+            </form>
+            <div>
+                <p>
+                    <p>Not Registered Yet? <a href="registration.html" style="text-decoration:none;">Register Now!</a></p>
+                    <a href="../homepage.html" style="text-decoration:none;">Back To Home!</a>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
